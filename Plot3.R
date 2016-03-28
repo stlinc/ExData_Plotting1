@@ -17,6 +17,6 @@ lines(datetime, subMeter2, type="l", col="red")
 lines(datetime, subMeter3, type="l", col="blue")
 legend("topright", lty = 1, lwd=1, col=c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 ## Copy plot (plot on current device) to a PNG file
-dev.copy(png, file = "Plot3.png")
+dev.copy(png, file = "Plot1.png", width = 480, height = 480)
 ## Don't forget to close the PNG device!
 dev.off()

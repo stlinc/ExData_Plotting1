@@ -11,6 +11,6 @@ householdPowerDataSubset$Global_active_power <- as.numeric(householdPowerDataSub
 globalActivePower <- as.numeric(householdPowerDataSubset$Global_active_power)
 hist(globalActivePower, col="red", main = "Global Active Power", xlab="Global Active Power (kilowatts)")
 ## Copy plot (plot on current device) to a PNG file
-dev.copy(png, file = "Plot1.png")
+dev.copy(png, file = "Plot1.png", width = 480, height = 480)
 ## Don't forget to close the PNG device!
 dev.off()

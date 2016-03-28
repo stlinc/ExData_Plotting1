@@ -11,6 +11,6 @@ globalActivePower <- as.numeric(householdPowerDataSubset$Global_active_power)
 dateTime <- strptime(paste(householdPowerDataSubset$Date, householdPowerDataSubset$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 plot(dateTime, globalActivePower, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 ## Copy plot (plot on current device) to a PNG file
-dev.copy(png, file = "Plot2.png")
+dev.copy(png, file = "Plot1.png", width = 480, height = 480)
 ## Don't forget to close the PNG device!
 dev.off()

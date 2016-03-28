@@ -27,6 +27,6 @@ legend("topright", lty = 1, lwd=1, col=c("black", "red", "blue"), legend = c("Su
 globalReactivePower <- as.numeric(householdPowerDataSubset$Global_reactive_power)
 plot(dateTime, globalReactivePower, type="l", xlab="datetime", ylab="Global_reactive_power")
 ## Copy plot (plot on current device) to a PNG file
-dev.copy(png, file = "Plot4.png")
+dev.copy(png, file = "Plot1.png", width = 480, height = 480)
 ## Don't forget to close the PNG device!
 dev.off()
